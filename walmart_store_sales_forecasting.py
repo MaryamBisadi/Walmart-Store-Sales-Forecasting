@@ -117,22 +117,6 @@ plt.show()
 
 
 # Random Forest Regression
-'''
-randomforest = RandomForestRegressor(n_estimators = 150, random_state = 0)
-randomforest.fit(XTrain, YTrain)
-
-YHatTest = randomforest.predict(XTest)
-plt.plot(YTest, YHatTest,'ro')
-plt.plot(YTest, YTest,'b-')
-plt.show()
-
-# calculate the accuray of the model by sum of Square and mean absolute prediction error
-MAPE = np.mean(abs((YTest - YHatTest)/YTest))
-MSSE = np.mean(np.square(YHatTest - YTest))
-
-print("Non Linear Regression Mean Absolute Prediction Error:",MAPE)
-print("Non Linear Regression Mean Squared Error", MSSE)
-'''
 n_estimators = np.linspace(5, 200, 5)
 testError = np.empty(5)
 
