@@ -45,6 +45,7 @@ For analyzing a non linear regression method for this experiment RandomForest re
 Based on this diagram the best number of tree for the random forets is 150 and the calculated error for RandomForest method with this number of trees as the parameter is:
 
 Non Linear Regression Mean Absolute Prediction Error: 0.06514781427233526
+
 Non Linear Regression Mean Squared Error 21526476093.822758
 
 
