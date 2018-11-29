@@ -25,7 +25,7 @@ Linear Regression Mean Absolute Prediction Error: 0.08592635208443362
 
 Linear Regression Mean Squared Error: 27520243852.51742
 
-The following diagram shows Lasso Regression. It has been used for Dimension Reduction since Lasso penalizing extra features. To find the best penalty parameter mean squre error is calculated for a range of values for penalty parameter.
+The following diagram shows Lasso Regression. It has been used for Dimension Reduction since Lasso penalizing extra features. To find the best penalty parameter mean squared error is calculated for a range of values for penalty parameter.
 
 ### Lasso Mean Squared Error for a range of penalty parameters
 ![figure_1-3](https://user-images.githubusercontent.com/39537957/49209126-7df59a00-f36e-11e8-8879-7a2a9104e807.png)
@@ -37,12 +37,15 @@ The same analyses has been done for Ridge and ElasticNet methods as well.
 ### ElasticNet Mean Squared Error for a range of penalty parameters
 ![figure_1-5](https://user-images.githubusercontent.com/39537957/49210799-de86d600-f372-11e8-9058-a7ced90e43e3.png)
 
-For analysing a non linear regression method for this experiment RandomForest regression method has been chosed. The following diagram shows mean squared error for differnt number of tree in the forest
+For analyzing a non linear regression method for this experiment RandomForest regression method has been chosen. The following diagram shows mean squared error for different number of tree in the forest
 
-### RandomForest Mean Squared Error for differnt number of tree in the forest
+### RandomForest Mean Squared Error for different number of tree in the forest
 ![figure_1-6](https://user-images.githubusercontent.com/39537957/49210844-f8c0b400-f372-11e8-9424-1fedef855805.png)
 
-Based on this diagram the best number of tree for the randomforets is 150 and the calculated error for RandomForest method with this number of trees as the parameter is:
+Based on this diagram the best number of tree for the random forets is 150 and the calculated error for RandomForest method with this number of trees as the parameter is:
 
 Non Linear Regression Mean Absolute Prediction Error: 0.06514781427233526
 Non Linear Regression Mean Squared Error 21526476093.822758
+
+
+By comparing error values of linear and non linear regression methods we find out that for our dataset random forest which is a nonlinear regression method works best
