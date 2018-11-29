@@ -87,10 +87,6 @@ for i, alpha in enumerate(alphas):
 plt.plot(alphas, testError, 'r-')
 plt.show()
 
-wmLinear = linear_model.LinearRegression(normalize=True)
-lasso = Lasso(alpha=15)
-lasso.fit(XTrain, YTrain)
-
 #Ridge
 alphas = np.linspace(0, 30, 5)
 testError = np.empty(5)
