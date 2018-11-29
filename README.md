@@ -48,7 +48,7 @@ Non Linear Regression Mean Absolute Prediction Error: 0.06514781427233526
 
 Non Linear Regression Mean Squared Error 21526476093.822758
 
-### Performance on the test data sets for linear regression model
+### Performance on the test data sets for non linear regression model
 ![figure_1-7](https://user-images.githubusercontent.com/39537957/49212060-ff9cf600-f375-11e8-99ca-2af2db12c3d8.png)
 
 By comparing error values of linear and non linear regression methods we find out that for our dataset random forest which is a nonlinear regression method works best
