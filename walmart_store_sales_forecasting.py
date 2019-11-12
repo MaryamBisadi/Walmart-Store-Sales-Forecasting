@@ -38,7 +38,7 @@ walmartstore=pd.merge(weeklyscale, feature, on=['Store', 'Date'], how='inner')
 
 #plot sum of weekly sales of different departments for store 1 based on date
 walmartstore['DateTimeObj'] = [dt.strptime(x, '%Y-%m-%d') for x in list(walmartstore['Date'])]
-walmartstore['DateTimeObj'].head()
+
 plt.plot(walmartstore[(walmartstore.Store==1)].DateTimeObj, walmartstore[(walmartstore.Store==1)].Weekly_Sales, 'ro')
 plt.show()
 
@@ -49,7 +49,6 @@ walmartstore['Store'].unique()
 Store_Dummies = pd.get_dummies(walmartstore.Store, prefix='Store').iloc[:,1:]
 
 walmartstore = pd.concat([walmartstore, Store_Dummies], axis=1)
-walmartstore.head()
 
 # Splitting the dataset into Training set and Tes set
 train_WM, test_WM = train_test_split(walmartstore, test_size=0.3,random_state=42)
